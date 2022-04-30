@@ -1,0 +1,910 @@
+@import url(https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;800&family=DM+Serif+Display:ital@1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Redacted+Script&family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,200;1,400&display=swap);
+* {
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: inter;
+}
+:root {
+    --main-color: #0E0B06;
+    --secondary-color: #D19876;
+    --black-color: rgb(0, 0, 0);
+    --white-color: rgb(255, 255, 255);
+}
+body {
+    background-color: var(--main-color);
+}
+header {
+   /* margin: 30px 50px 20px;
+    padding: 0px 5px 0px 5px;
+    border-radius: 50px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 30px;
+    color: var(--secondary-color);
+    background-color: #0E0B06;
+    background-image: linear-gradient(45deg, #0E0B06 25%, transparent 25%, transparent 75%, #0E0B06 75%, #0E0B06),
+     linear-gradient(45deg, #0E0B06 25%, transparent 25%, transparent 75%, #0E0B06 75%, #0E0B06), linear-gradient(to bottom, #0E0B06, rgb(32, 32, 32));
+    background-size: 10px 10px, 10px 10px, 10px 5px;
+    background-position: 0px 0px, 5px 5px, 0px 0px;
+}
+header .logo {
+    margin-left: 20px;
+}
+header nav {
+    margin-right: 20px;
+}
+nav {
+    padding-top: 8px ;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+nav ul li a {
+    margin: 0px 5px 0px 5px;
+    color: var(--white-color);
+    text-decoration: none;
+}
+/*main section*/
+main {
+    margin-top: 150px;
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-around;
+}
+.text{
+    margin-left: 10%;
+}
+main img {
+    height: 400px;
+    width: 400px;
+}
+
+
+
+main .text h1 {
+    
+    font-size: 64px;
+    color: var(--secondary-color);
+    font-weight: 300;
+}
+main .text p {
+    font-size: 40px;
+    margin-left: 120px;
+    
+}
+.picture {
+    margin: auto;
+}
+.socialLinks {
+    margin: auto;
+    position: fixed;
+    left: 0px;
+}
+.socialLinks ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    list-style-type: none;
+}
+.socialLinks ul i {
+    padding: 10px;
+    font-size: 25px;
+    color: var(--secondary-color);
+}
+.socialLinks ul::before {
+    content: "";
+    width: 0;
+    height: 80%;
+    border: 1px solid var(--secondary-color);
+    position: absolute;
+    left: 60px;
+    top: -120px;
+}
+.socialLinks ul::after {
+    content: "";
+    width: 0;
+    height: 80%;
+    border: 1px solid var(--secondary-color);
+    position: absolute;
+    left: 60px;
+    bottom: -120px;
+}
+
+
+
+hr {
+    margin-top: 80px;
+    border: 1px solid var(--secondary-color);
+    width: 90%;
+}
+/*about section*/
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 20px 0px 20px;
+}
+
+.image img {
+    height: 630px;
+    width: 363px;
+}
+/*
+.image::before {
+    content: "";
+    border: 10px solid ;
+    border-color: var(--secondary-color) transparent transparent var(--secondary-color);
+    width: 50px;
+    height: 5%;
+    position: absolute;
+    left: 150px;
+    z-index: 99;
+    bottom: 50px;
+}
+.image::after {
+    content: "";
+    border: 10px solid ;
+    border-color:transparent var(--secondary-color) var(--secondary-color) transparent;
+    width: 50px;
+    height: 5%;
+    position: absolute;
+    left: 530px;
+    z-index: 99;
+    bottom: -600px;
+}
+
+*/
+
+.about h2, .portfolio h2 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 48px;
+    
+}
+.about p {
+    color: var(--white-color);
+    text-align: center;
+    font-size: 24px;
+}
+/*
+.about p::before {
+    content: "";
+    border: 1px solid ;
+    border-color: var(--secondary-color) transparent transparent var(--secondary-color);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 53%;
+    z-index: 99;
+    bottom: -200px;
+}
+.about p::after {
+    content: "";
+    border: 1px solid ;
+    border-color:transparent var(--secondary-color) var(--secondary-color) transparent ;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10%;
+    z-index: 99;
+    bottom: -400px;
+}
+
+*/
+.details {
+    padding: 20px;
+    width: 45%;
+    
+}
+
+.portfolio h2 {
+    margin:20px  auto;
+}
+.portfolio .elements ul {
+    display: flex;
+    justify-content: center;
+}
+.portfolio .elements ul li {
+    cursor: pointer;
+    list-style-type:none;
+    margin: 10px 50px 10px 0px;
+    padding: 10px 20px 10px 20px;
+    color: var(--secondary-color);
+    border-radius: 50px;
+    font-size: 20px;
+}
+.selected {
+    background-color: var(--black-color);
+    border: 1px solid var(--secondary-color);
+}
+.portfolio .elements ul li:hover{
+    background-color: var(--black-color);
+    border: 1px solid var(--secondary-color);
+   
+}
+.imagesHolder {
+    width: 100%;
+    
+}
+
+.photosDiv{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    background-color: var(--main-color);
+    margin: auto;
+    border: 1px solid var(--secondary-color);
+    width: 64%;
+}
+.productsDiv {
+    display: none;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    background-color: var(--main-color);
+    margin: auto;
+    border: 1px solid var(--secondary-color);
+    width: 64%;
+}
+.portraitDiv {
+    display: none;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    background-color: var(--main-color);
+    margin: auto;
+    border: 1px solid var(--secondary-color);
+    width: 64%;
+}
+.streetDiv {
+    display: none;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    background-color: var(--main-color);
+    margin: auto;
+    border: 1px solid var(--secondary-color);
+    width: 64%;
+}
+.natureDiv {
+    display: none;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    background-color: var(--main-color);
+    margin: auto;
+    border: 1px solid var(--secondary-color);
+    width: 64%;
+}
+.designDiv {
+    display: none;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    background-color: var(--main-color);
+    margin: auto;
+    border: 1px solid var(--secondary-color);
+    width: 64%;
+}
+
+.photosDiv div ,.productsDiv div, .portraitDiv div,.designDiv div, .natureDiv div, .streetDiv div {
+    color: white;
+    border: 2px solid var(--secondary-color);
+}
+.photosDiv img,  .natureDiv img, .designDiv img, .portraitDiv img, .productsDiv img, .streetDiv img{
+    height: 400px;
+    width: 400px;
+}
+
+.photosDiv img:hover , .productsDiv img:hover, .portraitDiv img:hover,.designDiv img:hover, .natureDiv img:hover, .streetDiv img:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+#seeMore {
+    background-color:#15110A;
+    color: var(--secondary-color);
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    border: none;
+    position: absolute;
+    right: 30vh;
+    margin-top: 20px;
+    font-size: 20px;
+}
+#seeMore:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.services h2, .contact h2 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 48px;
+}
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+.card {
+    width: 300px;
+    height: 300px;
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    margin-left: 20px ;
+    margin-bottom: 30px;
+}
+.card div {
+    display: flex;
+    justify-content: center;
+}
+.card div img {
+    margin-top: 20px;
+    color: #15110A;
+    height: 200px;
+    width: 200px;
+}
+.card p {
+    margin-top: -10px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+.feedback {
+    width: 100%;
+    height: 50vh;
+}
+.swiper {
+    width: 80%;
+    height: fit-content;
+    
+}
+.swiper p {
+    text-align: center;
+    margin-top: 100px;
+}
+.swiper-slide {
+    display: flex;
+}
+.swiper-slide img {
+    width: 250px;
+    height: 250px;
+    margin-right: 100px;
+}
+.feedback h1 {
+    color: var(--secondary-color);
+    
+}
+.feedback h2 {
+    color: var(--secondary-color);
+    font-size: 48px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.feedPara {
+    margin: -10px 20px 0px 20px;
+    padding: 0px 10px 0px 10px;
+    height: 150px;
+}
+.firstH {
+    text-align: start;
+}
+.lastH {
+    text-align: right;
+}
+.feedback p {
+    width: 100%;
+    color: var(--white-color);
+    font-size: 20px;
+
+}
+
+.alignFeedback{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.alignFeedback div img {
+    height: 415px;
+    width: 231px;
+}
+/*
+.firstFeedback h1::before {
+    content: "";
+    position: absolute;
+    border: 1px solid var(--secondary-color);
+    width: 120px;
+    left: 35%;
+
+}
+*/
+
+.alignFeedback i {
+    color: var(--white-color);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.firstFeedback {
+    margin-right: 100px;
+}
+
+.alignFeedback i:hover{
+    transform: scale(1.1);
+}
+
+.contactsArea {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 100px 50px 100px;
+}
+.contactsArea .messages {
+    background-color: #15110A;
+    width: 500px;
+    height: 420px;
+    border-radius: 50px;
+}
+.verticalLine {
+    border-left: 6px solid var(--secondary-color);
+  height: 400px;
+}
+
+.socialMediaLinks div {
+    width: 500px ;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #15110A;
+    border-radius: 50px;
+    
+
+}
+.socialMediaLinks div p {
+    color: var(--secondary-color);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.phoneNumber {
+    margin: auto;
+    background-color: #15110A;
+    width: 120px;
+    border-radius: 50px;
+    padding: 1px;
+}
+.phoneNumber p {
+    color: var(--secondary-color);
+    font-size: 18px;
+    text-align: center;
+    
+}
+.socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+.socials p {
+    margin-top: 0px;
+    color: var(--secondary-color);
+    font-size: 20px;
+    text-align: center;
+    line-height: 1;
+}
+.socials div ul {
+    list-style-type: none;
+    display: flex;
+    
+}
+
+.div2 {
+    display: flex;
+    justify-content: center;
+}
+.socials div div i {
+    color: var(--secondary-color);
+    margin-right: 10px;
+    
+}
+.socials div ul li {
+    color: var(--secondary-color);
+    font-size: 20px;
+    margin-right: 40px;
+}
+.socials .ulHolder {
+    background-color: #15110A;
+    padding: 5px;
+    margin-left: 100px;
+    border-radius: 20px;
+    border: 1px solid var(--secondary-color);
+}
+.socials .ulHolder ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.socialMediaLinks div {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#inputName, #inputEmail, #inputMessage {
+    color: var(--secondary-color);
+    margin: 40px 0px 0px 40px;
+    border: 1px solid;
+    border-color: transparent transparent var(--secondary-color) transparent;
+    -ms-appearance:none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #15110A;
+    padding: 12px;
+    border-radius: 3px;
+    width: 300px;
+    outline: none;
+    font-size: 20px;
+
+}
+#inputName:focus::placeholder ,#inputEmail:focus::placeholder, #inputMessage:focus::placeholder {
+    color: transparent;
+}
+#inputName::placeholder, #inputEmail::placeholder, #inputMessage::placeholder {
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+#messageBtn {
+    outline: none;
+    background-color: #15110A;
+    border: 1px solid var(--secondary-color);
+    width: 250px;
+    font-size: 20px;
+    color: var(--secondary-color);
+    margin: 50px 0px 10px 100px;
+    padding: 10px 0px 10px 0px;
+
+}
+#messageBtn:hover {
+    background: var(--main-color);
+}
+
+footer{
+    background-color: #0E0B06;
+    background-image: linear-gradient(45deg, #0E0B06 25%, transparent 25%, transparent 75%, #0E0B06 75%, #0E0B06),
+     linear-gradient(45deg, #0E0B06 25%, transparent 25%, transparent 75%, #0E0B06 75%, #0E0B06), linear-gradient(to bottom, #0E0B06, rgb(32, 32, 32));
+    background-size: 10px 10px, 10px 10px, 10px 5px;
+    background-position: 0px 0px, 5px 5px, 0px 0px;
+    border-radius: 30px;
+}
+
+
+/*Media queries*/
+
+@media screen and (min-device-width: 600px) and (max-device-width: 1370px){
+   
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media only screen and (max-width: 1370px) {
+    .feedback { 
+        height: 70vh;
+        
+    }
+    .feedback p {
+        margin-left: 20px;
+    }
+    .card p {
+        font-size: 20px;
+    }
+    .image img {
+        width: 250px;
+        height: 450px;
+    }
+    .photosDiv img,  .natureDiv img, .designDiv img, .portraitDiv img, .productsDiv img, .streetDiv img{
+        height: 285px;
+        width: 285px;
+    }
+    .cards {
+        margin-left:50px ;
+        margin-right: 50px;
+    }
+    .contactsArea {
+        margin: 50px 60px 50px 100px;
+    }
+    .verticalLine {
+        margin-left: 70px;
+    }
+    .socialMediaLinks div p, #inputName, #inputEmail, #inputMessage, #messageBtn{
+        font-size: 16px;
+    }
+    .contact {
+        margin: 0px 30px 0px 30px;
+    }
+    #messageBtn{
+        width: 200px;
+    }
+    .messages {
+        padding-right: 20px;
+    }
+    #inputName, #inputEmail, #inputMessage {
+        border: 1px solid;
+        border-color: transparent transparent var(--secondary-color) transparent;
+        -ms-appearance:none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+    
+    }
+    .socialLinks {
+        margin-left: -30px;
+    }
+    .picture img{
+        height: 300px;
+        width: 300px;
+    }
+    .details h2, .portfolio h2, .services h2, .contact h2 {
+        font-size: 30px;
+    }
+    .details p {
+        font-size: 16px;
+    }
+    .portfolio .elements ul li {
+        font-size: 16px;
+    }
+    #seeMore {
+        display: none;
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .verticalLine {
+        margin-right: 70px;
+    }
+    .div1 p{
+        font-size: 16px;
+    }
+    .ulHolder li a, .socials .rights {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .swiper-slide img {
+        display: none;
+    }
+    main .picture::before {
+    display: none;
+    
+}
+    .ulHolder {
+        background-color: #0E0B06;
+        background-image: linear-gradient(45deg, #0E0B06 25%, transparent 25%, transparent 75%, #0E0B06 75%, #0E0B06),
+         linear-gradient(45deg, #0E0B06 25%, transparent 25%, transparent 75%, #0E0B06 75%, #0E0B06), linear-gradient(to bottom, #0E0B06, rgb(32, 32, 32));
+         background-size: 10px 10px, 10px 10px, 10px 5px;
+         background-position: 0px 0px, 5px 5px, 0px 0px;
+    }
+    footer {
+        background: none;
+    }
+    
+    header {
+        display: block;
+        background: none;
+        
+    }
+     header h2 {
+         width: 300px;
+        font-size: 24px;
+        text-align: end;
+    }
+    nav {
+        background-color: #0E0B06;
+        background-image: linear-gradient(45deg, #0E0B06 25%, transparent 25%, transparent 75%, #0E0B06 75%, #0E0B06),
+         linear-gradient(45deg, #0E0B06 25%, transparent 25%, transparent 75%, #0E0B06 75%, #0E0B06), linear-gradient(to bottom, #0E0B06, rgb(32, 32, 32));
+         background-size: 10px 10px, 10px 10px, 10px 5px;
+         background-position: 0px 0px, 5px 5px, 0px 0px;
+    }
+    .text {
+        margin-top: -120px;
+        margin-left: 280px;
+    }
+    main .text h1 {
+        width:500px;
+        font-size: 60px;
+        margin-right: 50px;
+    }
+    .picture img {
+        display: none;
+    }
+    hr {
+        margin-top: 100px;
+        margin-left: 100px;
+        width: 110%;
+    }
+    
+    .about .image {
+        display: none;
+    }
+    .about h2 {
+        font-size: 40px;
+    }
+    .details {
+        margin-right: 50px;
+    }
+    .details h2 {
+        margin-left: 150px;
+    }
+    .details p {
+        font-size: 20px;
+        width: 400px;
+    }
+    .portfolio h2{
+        margin-left: 200px;
+        font-size: 40px;
+    }
+    .elements {
+        margin-left: 200px;
+    }
+    .portfolio .elements ul li {
+        margin: 0px 0px 10px 0px;
+        padding: 10px 5px 10px 5px;
+        font-size: 20px;
+    }
+    .photosDiv{
+        display: grid;
+        grid-template-columns: 100%;
+        background-color: var(--main-color);
+        margin: 0 0 0 150px;
+        border: none;
+        width: 64%;
+    }
+    .productsDiv{
+        display: none;
+        grid-template-columns: 100%;
+        background-color: var(--main-color);
+        margin: 0 0 0 150px;
+        border: none;
+        width: 64%;
+    }
+    .portraitDiv{
+        display: none;
+        grid-template-columns: 100%;
+        background-color: var(--main-color);
+        margin: 0 0 0 150px;
+        border: none;
+        width: 64%;
+    }
+    .streetDiv{
+        display: none;
+        grid-template-columns: 100%;
+        background-color: var(--main-color);
+        margin: 0 0 0 150px;
+        border: none;
+        width: 64%;
+    }
+    .natureDiv{
+        display: none;
+        grid-template-columns: 100%;
+        background-color: var(--main-color);
+        margin: 0 0 0 150px;
+        border: none;
+        width: 64%;
+    }
+    .designDiv {
+        display: none;
+        grid-template-columns: 100%;
+        background-color: var(--main-color);
+        margin: 0 0 0 150px;
+        border: none;
+        width: 64%;
+
+    }
+    .delete1 {
+        display: none;
+    }
+
+    #seeMore {
+        position: absolute;
+        right: -50px;
+    }
+    .services {
+        margin-left: 140px;
+    }
+    .services h2 {
+        width: 300px;
+        font-size: 40px;
+    }
+    .cards {
+        display: grid;
+        margin-left: 110px;
+        
+    }
+    .card {
+        margin-bottom: 20px;
+        
+    }
+    .contact h2 {
+        margin-left: 200px;
+        font-size: 40px;
+    }
+    .contactsArea {
+        display: block;
+        margin-left: 30px;
+    }
+    .messages {
+        margin-bottom: 30px;
+        width:300px;
+    }
+    .verticalLine {
+        display: none;
+    }
+    .phoneNumber {
+        margin-left: 220px;
+    }
+    .socials {
+        display: grid;
+        margin-left: 120px;
+    }
+    .socials p {
+        margin-top: 15px;
+    }
+    .socials div ul li {
+        margin: 5px;
+    }
+    .socialLinks {
+        margin: auto;
+        position: fixed;
+        left: -25px;
+        top: 40%;
+    }
+    .rights{
+        margin-left: 130px;
+    }
+    .div1 {
+        margin-left: 130px;
+    }
+    .div2{
+        margin-bottom: 30px;
+    }
+    .details {
+        margin-top: -100px;
+        margin-bottom: -80px;
+    }
+    nav {
+        background-color: var(--black-color);
+        border-radius: 50px;
+        padding: 10px 20px 10px 20px;
+        width: 400px;
+        
+        
+    }
+    nav ul {
+        padding-left: 0px;
+    }
+    #seeMore {
+        display: none;
+    }
+
+    .feedback {
+        margin-left: 100px;
+    }
+    .feedback h2 {
+        font-size: 40px;
+    }
+    .feedback p {
+        font-size: 20px;
+        margin: 50px 50px 50px 50px;
+    }
+    .hrFeedback {
+        margin-top: -30px;
+    }
+    .ulHolder ul li a{
+        padding-right: 30px;
+    }
+    
+
+  }

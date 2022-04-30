@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Redacted+Script&family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,200;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;800&family=DM+Serif+Display:ital@1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Redacted+Script&family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,200;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <title>Akrams Creations</title>
+</head>
+<body>
+    <header>
+        <h2>Akrams Creations</h2>
+        <nav>
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Feedback">Feedback</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="socialLinks">
+            <ul>
+                <li><a href="https://www.instagram.com/akram.ser/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/100024737301891" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/akram-abdelbari-serrar-7414b0225/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        
+            
+        <div class="text">
+            <h1>Akrams Creations</h1>
+            <p>Photographer</p>
+        </div>
+        <div class="picture">
+            <img src="itsme.jpg" alt="">
+        
+        </div>
+    </main>
+    <hr>
+    <div class="about" id="About">
+        <div class="image">
+            <img src="me.jpg" alt="">
+        </div>
+        <div class="details">
+            <h2>About</h2>
+            <p>Akram Serrar is an internationally acclaimed photographer,
+                filmmaker, YouTube creator and entrepreneur based in Constantine, Algeria.
+                Akrams work can be found in a number of outlets but a notable personal achievement
+                for this Algerian was having his work featured on two special collection coins
+                issued by the Royal Algerian Mint.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="portfolio" id="Portolio">
+        <h2>Portfolio</h2>
+        <div class="elements">
+            <ul>
+                <li class="selected" id="photos" onclick="changeItems('photosDiv')">Food</li>
+                <li id="products" onclick="changeItems('productsDiv')">Products</li>
+                <li id="portrait" onclick="changeItems('portraitDiv')">Portrait</li>
+                <li id="street" onclick="changeItems('streetDiv')">Street</li>
+                <li id="nature" onclick="changeItems('natureDiv')">Nature</li>
+                <li id="design" onclick="changeItems('designDiv')">Design</li>
+            </ul>
+        </div>
+        <div class="imagesHolder">
+            <div class="photosDiv" id="photosDiv">
+                <img src="nature/nature1.jpg" alt="">
+                <img src="nature/nature2.jpg" alt="">
+                <img src="nature/nature3.jpg" alt="">
+                <img class="delete1" src="nature/nature1.jpg" alt="">
+                <img class="delete1" src="nature/nature2.jpg" alt="">
+                <img class="delete1" src="nature/nature3.jpg" alt="">
+                
+            </div>
+            <div class="productsDiv" id="productsDiv">
+                
+                <img src="nature/nature1.jpg" alt="">
+                
+                <img src="nature/nature2.jpg" alt="">
+              
+                <img src="nature/nature3.jpg" alt="">
+                
+            </div>
+            <div class="portraitDiv" id="portraitDiv">
+                <img src="nature/nature3.jpg" alt="">
+                
+                <img src="nature/nature3.jpg" alt="">
+              
+                <img src="nature/nature3.jpg" alt="">
+            </div>
+            <div class="streetDiv" id="streetDiv">
+                <img src="nature/nature2.jpg" alt="">
+                
+                <img src="nature/nature2.jpg" alt="">
+              
+                <img src="nature/nature2.jpg" alt="">
+            </div>
+            
+            <div class="natureDiv" id="natureDiv">
+                <img src="nature/nature1.jpg" alt="">
+                <img src="nature/nature2.jpg" alt="">
+                <img src="nature/nature3.jpg" alt="">
+            </div>
+            <div class="designDiv" id="designDiv">
+                <img src="nature/nature2.jpg" alt="">
+                
+                <img src="nature/nature1.jpg" alt="">
+              
+                <img src="nature/nature3.jpg" alt="">
+            </div>
+        </div>
+        <div>
+            <input id="seeMore" type="button" value="See More">    
+        </div>
+        
+    </div>
+    <hr>
+    <div class="services" id="Services">
+        <h2>My Services</h2>
+        <div class="cards">
+            <div class="card">
+                <div><img src="ServicesPics/food-service.png" alt=""></div>
+                <p>Food Photography</p>
+            </div>
+            <div class="card">
+                <div><img src="servicesPics/product-service.png" alt=""></div>
+                <p>Products Photography</p>
+            </div>
+            <div class="card">
+                <div><img src="ServicesPics/product-service.png" alt=""></div>
+                <p>Social Media Posts</p>
+            </div>
+            <div class="card">
+                <div><img src="servicesPics/birthday-service.png" alt=""></div>
+                <p>Birthdays & Graduations</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="feedback" id="Feedback">
+        <h2>Feedbacks</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                  <p> has an amazing eye and is so easy to work with. Don’t pass up the chance to work with him!</p>
+                  <img src="nature/nature1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <p> is an extremely personable individual, with an artistic eye, he will make your experience memorable!!</p>
+                <img src="nature/nature2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <p>is super creative and is genuinely a nice guy. Great to work with!</p>
+                <img src="nature/nature3.jpg" alt="">
+            </div>
+              ...
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev" style="color: #D19876 ;"></div>
+            <div class="swiper-button-next" style="color: #D19876 ;"></div>
+          
+          </div>
+        
+    </div>
+    <hr class="hrFeedback">
+    <div class="contact" id="Contact">
+        <h2>Contact</h2>
+        <div class="contactsArea">
+            <div class="messages">
+                <form action="https://formspree.io/f/xoqrpevq" method="POST">
+                    <label>
+                        <input type="text" name="Name" id="inputName" placeholder="Name">
+                        </label>
+                    <label>
+                    <input type="email" name="Email" id="inputEmail" placeholder="Email">
+                    </label>
+                    <label>
+                    <textarea name="message" id="inputMessage" placeholder="Message"></textarea>
+                    </label>
+  
+                    <button type="submit" id="messageBtn" onclick="clearFields()">Send Message</button>   
+                    </form>
+            </div>
+            <div class="verticalLine"></div>
+            <div class="socialMediaLinks">
+                <div><p>facebook</p> <p>Akram Serrar</p></div>
+                <div ><p>instagram</p> <p>@Akrams.creations</p></div>
+                <div><p>gmail</p> <p>me.akrams.creations@gmail.com</p></div>
+            </div>
+        </div>
+        <div class="phoneNumber"><p>0540518491</p></div>
+    </div>
+    <hr>
+    <footer>
+        <div class="socials">
+            <p class="rights">2022 All rights reserved</p>
+            <div class="ulHolder">
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Feedback">Feedback</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="div1">
+                <p>Made By Akram Abdelbari Serrar</p>
+                <div  class="div2">
+                    <a href="https://www.instagram.com/akram.ser/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                    <a href="https://www.facebook.com/100024737301891" target="_blank"><i class="fa-brands fa-facebook-f fa-2xl"></i></a>
+                    <a href="https://www.linkedin.com/in/akram-abdelbari-serrar-7414b0225/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
